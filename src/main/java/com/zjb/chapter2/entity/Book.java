@@ -1,4 +1,4 @@
-package com.zjb.entity;
+package com.zjb.chapter2.entity;
 
 
 import javax.persistence.Entity;

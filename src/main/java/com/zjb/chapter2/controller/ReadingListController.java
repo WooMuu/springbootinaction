@@ -1,7 +1,7 @@
-package com.zjb.controller;
+package com.zjb.chapter2.controller;
 
-import com.zjb.entity.Book;
-import com.zjb.repositery.ReadingListRepositery;
+import com.zjb.chapter2.entity.Book;
+import com.zjb.chapter2.repositery.ReadingListRepositery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
