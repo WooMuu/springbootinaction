@@ -1,3 +1,38 @@
 
 server:
   port: 8080
+logging:
+  file:
+    name: E:/demos/springbootinaction/logs/log.txt
+
+amazon:
+  associateId: 123456
+spring:
+  profiles:
+    active: dev
+---
+
+
+spring:
+  profiles: production
+  datasource:
+    url: jdbc:mysql://localhost:3306/library?useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+logging:
+  level:
+    root: warn
+
+
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+      url: jdbc:mysql://localhost:3306/library?useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: root
+logging:
+  level:
+    root: info

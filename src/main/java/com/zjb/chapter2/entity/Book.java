@@ -12,13 +12,23 @@ import javax.persistence.Id;
 @Entity
 public class Book {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String reader;
     private String isbn;
     private String title;
     private String author;
     private String description;
+
+    private transient String associateId;
+
+    public String getAssociateId() {
+        return associateId;
+    }
+
+    public void setAssociateId(String associateId) {
+        this.associateId = associateId;
+    }
 
     public long getId() {
         return id;
